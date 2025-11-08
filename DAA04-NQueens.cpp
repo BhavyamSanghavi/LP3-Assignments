@@ -49,14 +49,13 @@ int main() {
     cin >> N;
 
     int r, c;
-    cout << "Enter row (1-" << N << "): ";
+    cout << "Enter row (0-" << N << "): ";
     cin >> r;
-    cout << "Enter column (1-" << N << "): ";
+    cout << "Enter column (0-" << N << "): ";
     cin >> c;
-    r--; c--; // convert to 0-indexed
 
     vector<vector<int>> board(N, vector<int>(N, 0));
-    board[r][c] = 1; // user places first queen
+    board[r][c] = 1;
 
     // Try to solve from column 0 onward
     if (solve(board, 0, N))

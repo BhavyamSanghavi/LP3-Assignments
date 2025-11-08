@@ -4,7 +4,6 @@
 #include <vector>
 using namespace std;
 
-// Node structure for Huffman Tree
 struct Node {
     char ch;
     int freq;
@@ -17,14 +16,12 @@ struct Node {
     }
 };
 
-// Comparator for min-heap
 struct Compare {
     bool operator()(Node* a, Node* b) {
         return a->freq > b->freq;
     }
 };
 
-// Recursive function to generate Huffman Codes
 void generateCodes(Node* root, string code, unordered_map<char, string>& codes) {
     if (!root) return;
 
@@ -35,7 +32,6 @@ void generateCodes(Node* root, string code, unordered_map<char, string>& codes) 
     generateCodes(root->right, code + "1", codes);
 }
 
-// Build Huffman Tree and encode text
 void huffmanEncode(const string& text) {
     if (text.empty()) {
         cout << "Empty input!\n";
@@ -78,7 +74,6 @@ void huffmanEncode(const string& text) {
     cout << endl;
 }
 
-// Main
 int main() {
     string text;
     cout << "Enter text to encode using Huffman Encoding: ";

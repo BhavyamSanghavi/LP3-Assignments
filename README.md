@@ -42,5 +42,3 @@ Feel free to **open an Issue** or **submit a Pull Request** — I’d love to le
 This repository grows with every contribution.  
 Thank you to everyone who learns, shares, and builds together! 🌱  
 
----
-

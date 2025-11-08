@@ -4,7 +4,6 @@ def fibonacci_iterative(n):
         print(a, end=" ")
         a, b = b, a + b
 
-# Example: print first 10 Fibonacci numbers
 fibonacci_iterative(10)
 
 
@@ -14,7 +13,6 @@ def fib_recursive(n):
     else:
         return fib_recursive(n-1) + fib_recursive(n-2)
 
-# Print first 10 Fibonacci numbers
 for i in range(10):
     print(fib_recursive(i), end=" ")
 

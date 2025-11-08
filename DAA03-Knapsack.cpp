@@ -1,6 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include<bits/stdc++.h>
 using namespace std;
 
 int solve(int W, int wt[],int val[], int n, int i,vector<vector<int>>&dp)

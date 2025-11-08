@@ -44,7 +44,6 @@ void randomizedQuickSort(vector<int>& arr, int low, int high) {
     }
 }
 
-// Utility function to print array
 void printArray(const vector<int>& arr) {
     for (int x : arr)
         cout << x << " ";
